@@ -32,6 +32,7 @@ const HomeScreen = () => {
   const { user, logout } = useAuth();
   const swiperRef = useRef(null);
   const [profile, setProfile] = useState([]);
+  
 
   useLayoutEffect(() => {
     unsub();
@@ -74,7 +75,7 @@ const HomeScreen = () => {
       });
       setProfile(profiles);
     } catch (e) {
-      console.log("e :>> ", e);
+      console.log("ee :>> ", e);
     }
   };
 
